@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Header } from "../shared/components";
 import "./globals.css";
 
 const cormorant_garamond = Cormorant_Garamond({
@@ -26,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jost.className}>{children}</body>
+      <body className={jost.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
