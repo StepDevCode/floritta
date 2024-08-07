@@ -1,0 +1,35 @@
+/* Colors */
+$white-color: #fdfdfd;
+$black-color: #131313;
+$silver-color: #f2f2f4;
+$gray-color: #878787;
+$light-gray-color: #cecece;
+$graphite-color: #585858;
+
+/* Fonts */
+$jost: "Jost", serif;
+$cormorant: "Cormorant Garamond", serif;
+
+/* Hover */
+@mixin link-hover {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 100% 50%;
+    transition: transform 0.3s;
+    transition: transform 300ms !important;
+  }
+
+  &:hover {
+    &::after {
+      transform-origin: 0% 50%;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
