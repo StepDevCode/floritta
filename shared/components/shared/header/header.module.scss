@@ -2,12 +2,13 @@
 
 .header {
   position: absolute;
+  padding-top: 20px;
   padding-bottom: 55px;
   top: 20px;
   left: 0;
   right: 0;
-  z-index: 5;
-  background-color: transparent;
+  z-index: 10;
+  z-index: 15;
 }
 
 .container {
