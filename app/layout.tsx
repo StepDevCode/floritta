@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
 import { Header } from "../shared/components";
+import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 
 const cormorant_garamond = Cormorant_Garamond({
