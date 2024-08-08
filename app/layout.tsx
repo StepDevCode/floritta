@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Header } from "../shared/components";
+import { Footer, Header } from "../shared/components";
 import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 
@@ -30,6 +30,7 @@ export default function RootLayout({
       <body className={jost.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
